@@ -1,0 +1,19 @@
+{
+  "name": "system-stats",
+  "version": "1.0.0",
+  "description": "Web App that shows system stats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juan-najera-dev/system-stats.git"
+  },
+  "author": "Juan Najera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juan-najera-dev/system-stats/issues"
+  },
+  "homepage": "https://github.com/juan-najera-dev/system-stats#readme"
+}
