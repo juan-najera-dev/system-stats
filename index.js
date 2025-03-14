@@ -5,5 +5,5 @@ import "dotenv/config";
 let port = process.env.PORT || 4000;
 
 server.listen(port, () => {
-  console.log(colors.green(`Server listening from port ${port}`));
+  console.log(colors.green(`Server listening on port ${port}`));
 });
