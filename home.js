@@ -5,9 +5,9 @@ import colors from "colors";
 let response = Router();
 
 let valueObject = {
-	cpu: "manufacturer, brand, processors, physicalCores, speed, speedMax",
-	osInfo: "platform, release",
 	system: "model, manufacturer",
+	osInfo: "platform, release",
+	cpu: "manufacturer, brand, processors, physicalCores, speed, speedMax",
 };
 
 const general = await si
@@ -43,10 +43,11 @@ response.get("/", (req, res) => {
 	let memoryTotal = { total, free, used };
 	// console.log(memoryTotal);
 
-	merged = { ...general, ...memoryTotal };
+	const memoryObject = { memory: { ...memoryTotal } };
+	merged = { ...general, ...memoryObject };
 	console.log(merged);
 
-	//   console.log(merged);
+	res.json(merged);
 });
 
 export default response;
